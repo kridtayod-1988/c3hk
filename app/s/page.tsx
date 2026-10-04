@@ -1,5 +1,5 @@
-import { AuthenticatedAgentChat } from "@/app/_components/authenticated-agent-chat";
+import { AgentChat } from "@/app/_components/agent-chat";
 
 export default function NewSessionPage() {
-  return <AuthenticatedAgentChat sessionless />;
+  return <AgentChat sessionless />;
 }

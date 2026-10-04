@@ -1,4 +1,4 @@
-import { AuthenticatedAgentChat } from "@/app/_components/authenticated-agent-chat";
+import { AgentChat } from "@/app/_components/agent-chat";
 
 export default async function SessionPage({
   params,
@@ -6,5 +6,5 @@ export default async function SessionPage({
   readonly params: Promise<{ readonly sessionId: string }>;
 }) {
   const { sessionId } = await params;
-  return <AuthenticatedAgentChat sessionId={sessionId} />;
+  return <AgentChat sessionId={sessionId} />;
 }
