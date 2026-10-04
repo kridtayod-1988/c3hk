@@ -20,8 +20,8 @@ const mono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "c3hk",
-  description: "A Next.js starter for eve agents with AI Elements.",
+  title: "K-Platform Admin | ภาพรวมระบบ",
+  description: "แดชบอร์ดหลังบ้านสำหรับจัดการผู้ใช้งาน ชุดข้อสอบ และการตรวจสอบตัวตน",
 };
 
 // The page and Eve routes validate the generated app's Better Auth session.

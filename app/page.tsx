@@ -1,5 +1,5 @@
-import { AuthenticatedAgentChat } from "./_components/authenticated-agent-chat";
+import { AdminDashboard } from "./_components/admin-dashboard";
 
 export default function Page() {
-  return <AuthenticatedAgentChat />;
+  return <AdminDashboard />;
 }
