@@ -11,9 +11,8 @@ import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
-const supabase = createSupabaseBrowserClient();
-
 async function fetchDashboard() {
+  const supabase = createSupabaseBrowserClient();
   const [profiles, pending, attempts, examSets] = await Promise.all([
     supabase.from("profiles").select("id, full_name, display_name, role, verification_status, created_at").order("created_at", { ascending: false }).limit(8),
     supabase.from("verification_requests").select("id", { count: "exact", head: true }).eq("status", "pending"),
